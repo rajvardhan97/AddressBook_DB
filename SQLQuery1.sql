@@ -24,3 +24,5 @@ Select * from AddressBook_Table where City = 'Delhi' or State = 'Uttar Pradesh'
 
 Insert into AddressBook_Table Values('Kshitij', 'Puri', 'Turner Road', 'Dehradun', 'Uttrakhand', 267001, 9837010277, 'puri.kshitij10@gmail.com')
 Select Count(*),State,City from AddressBook_Table Group by State,City
+
+select * from AddressBook_Table where City='Dehradun' order by Firstname
