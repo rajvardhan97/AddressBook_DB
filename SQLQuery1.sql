@@ -19,3 +19,5 @@ Values('Abhishekh', 'Ratha', 'Old Mussorie Road', 'Dehradun', 'Uttrakhand', 2480
 Update AddressBook_Table set PhoneNumber = 8006907440 where Firstname = 'Himanshu'
 
 Delete from AddressBook_Table where Firstname='Kshitij' and Lastname='Puri'
+
+Select * from AddressBook_Table where City = 'Delhi' or State = 'Uttar Pradesh'
