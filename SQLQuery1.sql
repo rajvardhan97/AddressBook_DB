@@ -38,3 +38,14 @@ Select COUNT(*),Type from AddressBook_Table Group by Type
 
 Insert into AddressBook_Table(Firstname, Lastname, Address, City, State, Zip, PhoneNumber, Email, Type)
 Values('Abhishekh', 'Ratha', 'Old Mussorie Road', 'Dehradun', 'Uttrakhand', 248001, 7017782365, 'abhirartha@gmail.com', 'Friends')
+
+create table Location
+(ID int,
+Area varchar (20)
+constraint Location_foreign_Key_ID foreign key(ID) references AddressBook_Table(ID) on delete cascade)
+
+create table TypeTable
+(ID int,
+Type varchar(20),
+constraint TypeTable_foreign_key foreign key(ID) references AddressBook_Table(ID) on delete cascade) 
+Insert into TypeTable select ID, Type from AddressBook_Table
