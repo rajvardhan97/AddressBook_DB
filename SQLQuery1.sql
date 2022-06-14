@@ -33,3 +33,5 @@ Alter table AddressBook_Table Add Type VARCHAR(20)
 Update AddressBook_Table SET Type = 'Friends' where Firstname = 'Himanshu'
 Update AddressBook_Table SET Type = 'Family' where Firstname = 'Kshitij'
 Update AddressBook_Table SET Type = 'Family' where Firstname = 'Abhishekh'
+
+Select COUNT(*),Type from AddressBook_Table Group by Type
