@@ -26,3 +26,10 @@ Insert into AddressBook_Table Values('Kshitij', 'Puri', 'Turner Road', 'Dehradun
 Select Count(*),State,City from AddressBook_Table Group by State,City
 
 select * from AddressBook_Table where City='Dehradun' order by Firstname
+
+select * from AddressBook_Table
+
+Alter table AddressBook_Table Add Type VARCHAR(20)
+Update AddressBook_Table SET Type = 'Friends' where Firstname = 'Himanshu'
+Update AddressBook_Table SET Type = 'Family' where Firstname = 'Kshitij'
+Update AddressBook_Table SET Type = 'Family' where Firstname = 'Abhishekh'
