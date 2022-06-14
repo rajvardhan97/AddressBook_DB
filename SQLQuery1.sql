@@ -35,3 +35,6 @@ Update AddressBook_Table SET Type = 'Family' where Firstname = 'Kshitij'
 Update AddressBook_Table SET Type = 'Family' where Firstname = 'Abhishekh'
 
 Select COUNT(*),Type from AddressBook_Table Group by Type
+
+Insert into AddressBook_Table(Firstname, Lastname, Address, City, State, Zip, PhoneNumber, Email, Type)
+Values('Abhishekh', 'Ratha', 'Old Mussorie Road', 'Dehradun', 'Uttrakhand', 248001, 7017782365, 'abhirartha@gmail.com', 'Friends')
